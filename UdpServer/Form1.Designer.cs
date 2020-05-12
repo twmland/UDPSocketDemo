@@ -1,4 +1,4 @@
-﻿namespace UDPSocketDemo
+﻿namespace UdpServer
 {
     partial class Form1
     {

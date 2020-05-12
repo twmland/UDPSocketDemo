@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C72FA369-EB84-4413-8DFF-B4610E637B80}</ProjectGuid>
+    <ProjectGuid>{D2B77670-C5B6-42FB-B181-8C1FBB53F177}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>UDPSocketDemo</RootNamespace>
-    <AssemblyName>UDPSocketDemo</AssemblyName>
+    <RootNamespace>UdpServer</RootNamespace>
+    <AssemblyName>UdpServer</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
