@@ -40,7 +40,7 @@ namespace UdpServer
             {
                var rcvMessage =System.Text.Encoding.UTF8.GetString(uc.Receive(ref ipep));
                 #region do something
-                this.Invoke(delegateMthd, rcvMessage,LstBoxMessages);
+                DoSomething(delegateMthd, rcvMessage,LstBoxMessages);
                 #endregion 
             }
         }
@@ -58,9 +58,9 @@ namespace UdpServer
         {
             lstBxMessages.Items.Insert(0, message.ToString());
         }
-        void DoSomething()
+        void DoSomething(OneStringParameterDelegate delegateMthd,string rcvMessage, ListBox LstBoxMessages)
         {
-
+            this.Invoke(delegateMthd, rcvMessage, LstBoxMessages);
         }
     }
 }
