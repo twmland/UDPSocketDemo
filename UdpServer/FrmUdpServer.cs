@@ -18,6 +18,7 @@ namespace UdpServer
         IPEndPoint ipep = null;
         UdpClient uc = null;
         Thread thread = null;
+        delegate void OneStringParameterDelegate(string  message,ListBox lstBxMessages);
         public FrmUdpServer()
         {
             InitializeComponent();
@@ -34,24 +35,32 @@ namespace UdpServer
 
         private void GetMessageFromUdpClient()
         {
-            while(true)
+            OneStringParameterDelegate delegateMthd = new OneStringParameterDelegate(DisplayMessage);
+            while (true)
             {
-               var messageText =System.Text.Encoding.UTF8.GetString(uc.Receive(ref ipep));
-
+               var rcvMessage =System.Text.Encoding.UTF8.GetString(uc.Receive(ref ipep));
+                #region do something
+                this.Invoke(delegateMthd, rcvMessage,LstBoxMessages);
+                #endregion 
             }
         }
-
-        private void FrmUdpServer_FormClosed(object sender, FormClosedEventArgs e)
+        private void BtnClear_Click(object sender, EventArgs e)
         {
-          
+           
+            LstBoxMessages.Items.Clear();
         }
 
-        private void FrmUdpServer_FormClosing(object sender, FormClosingEventArgs e)
+        private void BtnClose_Click(object sender, EventArgs e)
         {
-            if (thread != null)
-            {
-                thread.Abort();
-            }
+            this.Close();
+        }
+        void DisplayMessage(string message,ListBox lstBxMessages)
+        {
+            lstBxMessages.Items.Insert(0, message.ToString());
+        }
+        void DoSomething()
+        {
+
         }
     }
 }

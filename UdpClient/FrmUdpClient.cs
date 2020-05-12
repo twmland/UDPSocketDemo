@@ -23,7 +23,7 @@ namespace UdpClient
 
         private void button1_Click(object sender, EventArgs e)
         {
-           var feedBack= UdpClient.SendTo(Encoding.UTF8.GetBytes("Message"), TargetEndpoint);
+           var feedBack= UdpClient.SendTo(Encoding.UTF8.GetBytes(TxtBxMessage.Text), TargetEndpoint);
         }
 
         private void FrmUdpClient_Load(object sender, EventArgs e)
@@ -38,6 +38,28 @@ namespace UdpClient
             {
                 UdpClient.Close();
             }
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void TxtBxMessage_TextChanged(object sender, EventArgs e)
+        {
+            if (TxtBxMessage.Text.Trim() == "")
+            {
+                BtnSend.Enabled = false;
+            }
+            else
+            {
+                BtnSend.Enabled = true;
+            }
+        }
+
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            TxtBxMessage.Text = "";
         }
     }
 }
