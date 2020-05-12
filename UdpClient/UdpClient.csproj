@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C72FA369-EB84-4413-8DFF-B4610E637B80}</ProjectGuid>
+    <ProjectGuid>{C1D06B69-26EC-45AF-AA68-427882F4767F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>UDPSocketDemo</RootNamespace>
-    <AssemblyName>UDPSocketDemo</AssemblyName>
+    <RootNamespace>UdpClient</RootNamespace>
+    <AssemblyName>UdpClient</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,14 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmUdpClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmUdpClient.Designer.cs">
+      <DependentUpon>FrmUdpClient.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmUdpClient.resx">
+      <DependentUpon>FrmUdpClient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

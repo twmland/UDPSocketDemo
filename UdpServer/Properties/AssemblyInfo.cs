@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 組件的一般資訊是由下列的屬性集控制。
 // 變更這些屬性的值即可修改組件的相關
 // 資訊。
-[assembly: AssemblyTitle("UDPSocketDemo")]
+[assembly: AssemblyTitle("UdpServer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("UDPSocketDemo")]
+[assembly: AssemblyProduct("UdpServer")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 下列 GUID 為專案公開 (Expose) 至 COM 時所要使用的 typelib ID
-[assembly: Guid("c72fa369-eb84-4413-8dff-b4610e637b80")]
+[assembly: Guid("d2b77670-c5b6-42fb-b181-8c1fbb53f177")]
 
 // 組件的版本資訊由下列四個值所組成: 
 //

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1082
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDPSocketDemo", "UDPSocketDemo\UDPSocketDemo.csproj", "{C72FA369-EB84-4413-8DFF-B4610E637B80}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpClient", "UdpClient\UdpClient.csproj", "{C1D06B69-26EC-45AF-AA68-427882F4767F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpServer", "UdpServer\UdpServer.csproj", "{D2B77670-C5B6-42FB-B181-8C1FBB53F177}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C72FA369-EB84-4413-8DFF-B4610E637B80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C72FA369-EB84-4413-8DFF-B4610E637B80}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C72FA369-EB84-4413-8DFF-B4610E637B80}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C72FA369-EB84-4413-8DFF-B4610E637B80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D06B69-26EC-45AF-AA68-427882F4767F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D06B69-26EC-45AF-AA68-427882F4767F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D06B69-26EC-45AF-AA68-427882F4767F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D06B69-26EC-45AF-AA68-427882F4767F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2B77670-C5B6-42FB-B181-8C1FBB53F177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B77670-C5B6-42FB-B181-8C1FBB53F177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B77670-C5B6-42FB-B181-8C1FBB53F177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B77670-C5B6-42FB-B181-8C1FBB53F177}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

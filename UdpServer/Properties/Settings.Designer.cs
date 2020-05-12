@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UDPSocketDemo.Properties
+namespace UdpServer.Properties
 {
 
 
